@@ -8,18 +8,22 @@ import Login from "./Login";
 
 function App() {
   
+  
 return (
   <div className="app">
     <Router>
-      <Switch>
-      <Route path="/login">
-  <Login />
-</Route>
+ 
+<Switch>
         <Route path="/">
           <Header />
           <Home />
         </Route>
       </Switch>
+      <Switch>
+      <Route path="/Login">
+  <Login />
+</Route>
+</Switch>
     </Router>
   </div>
 );
